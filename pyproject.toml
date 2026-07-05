@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legalizacion-tc"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "google-api-python-client>=2.120.0",
+    "google-auth>=2.28.0",
+    "openpyxl>=3.1.2",
+    "pandas>=2.2.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "python-dateutil>=2.8.2",
+    "pydantic>=2.6.0",
+    "pypdf>=5.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+legalizacion-tc = "legalizacion_tc.run_pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

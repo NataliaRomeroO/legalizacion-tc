@@ -1,0 +1,13 @@
+{
+  "source_filename": "proveedor_cloud.pdf",
+  "numero_factura": "INV-123",
+  "nit_proveedor": "900123456",
+  "razon_social": "PROVEEDOR CLOUD SAS",
+  "moneda": "USD",
+  "valor_base": 100.0,
+  "iva": 0.0,
+  "valor_total_documento": 100.0,
+  "fecha_factura": "2026-05-10",
+  "detalle_gasto": "TC 1111 SERVICIO APLICACIONES",
+  "legible": true
+}
