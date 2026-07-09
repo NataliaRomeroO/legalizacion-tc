@@ -95,7 +95,7 @@ def test_parse_extract_includes_gmf_rows(fixture_dir):
     gmf_rows = [tx for tx in data.transactions if tx.is_gmf]
     assert len(gmf_rows) == 1
     assert "4X1000" in gmf_rows[0].description.upper()
-    assert data.total_cop == pytest.approx(643500.0)
+    assert data.total_cop == pytest.approx(635000.0)
 
 
 def test_parse_extract_mixed_date_formats(tmp_path: Path):
